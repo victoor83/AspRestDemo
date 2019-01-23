@@ -6,8 +6,9 @@
 <div class="row">
     <div class="col-md-4">
         <h2>Getting started</h2>
-        <p id="MyElement1">XXX</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301870">Learn more &raquo;</a></p>
+        <p id="MyElement1">...Show value here...</p>
+        <input inputmode="numeric" id="myinput1" value="0" />
+        <button type="button" onclick="onButtonClick()">Show value</button>
     </div>
     <div class="col-md-4">
         <h2>Get more libraries</h2>
@@ -19,21 +20,9 @@
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
     </div>
-
-
-    <input inputmode="numeric" id="myinput1" value="0" />
-    <input type="button" onclick="onButtonClick()"/>
 </div>
 
-@*script für javascript
-    event WennDieDanzeSeiteAufgeldaenWird() {
-        $.ajax
-          get methode
-          url : api/Values/getData
-        done: function (result) {
-           $("#labelGettingStarted").val(result);
-        }
-    }*@
+
 
 @section scripts
 {
