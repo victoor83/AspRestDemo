@@ -9,6 +9,7 @@
         <p id="MyElement1">...Show value here...</p>
         <input inputmode="numeric" id="myinput1" value="0" />
         <button type="button" onclick="onButtonClick()">Show value</button>
+        <button type="button" onclick="onButtonClick2()">Open inputbox</button>
     </div>
     <div class="col-md-4">
         <h2>Get more libraries</h2>
@@ -20,35 +21,37 @@
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
     </div>
-</div>
 
+    <div class="col-md-4">
+        <!-- Surround the select box within a "custom-select" DIV element.
+     Remember to set the width: -->
+        <div class="custom-select" style="width:200px;">
+            <select id="myCombo">
+                <option value="0">Select car:</option>
+                <option value="1">Audi</option>
+                <option value="2">BMW</option>
+                <option value="3">Citroen</option>
+                <option value="4">Ford</option>
+                <option value="5">Honda</option>
+                <option value="6">Jaguar</option>
+                <option value="7">Land Rover</option>
+                <option value="8">Mercedes</option>
+                <option value="9">Mini</option>
+                <option value="10">Nissan</option>
+                <option value="11">Toyota</option>
+                <option value="12">Volvo</option>
+            </select>
+        </div>
+        <button type="button" onclick="onButtonClick2()">Open inputbox</button>
+    </div>
 
+    <script type="text/javascript" src="~/Scripts/MyScripts/HelloPage.js"></script>
 
-@section scripts
-{
-  <script type="text/javascript">
-      var onButtonClick =   function () { 
-          $.ajax({
-              url: "/api/Values/" + $("#myinput1").val(),
+    @*@section scripts
+        {
+            <script type="text/javascript">
 
-              success: function (result) {
-                  $("#MyElement1").html("<strong>" + result + "</strong> ");
-              }
-          });
-      }
+            </script>
 
-   //   $(document).ready(function ()
-   //   {    
-   //      $.ajax({
-   //          url: "/api/Values/" + $("#myinput1").val(),
-             
-   //          success: function (result)
-   //          {
-   //             $( "#MyElement1" ).html( "<strong>" + result + "</strong> " );
-   //          }
-   //     });
-   //});
-   </script>
-
-}
+        }*@
 
