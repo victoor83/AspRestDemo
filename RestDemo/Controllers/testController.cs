@@ -7,31 +7,31 @@ using System.Web.Http;
 
 namespace RestDemo.Controllers
 {
-    public class ConfigController : ApiController
+    public class testController : ApiController
     {
-        // GET: api/Config
+        // GET: api/xxx
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
-        // GET: api/Config/5
-        public string Get(int id)
+        // GET: api/xxx/5
+        public string Get(string ids)
         {
-            return "value";
+            return "value " + ids;
         }
 
-        // POST: api/Config
+        // POST: api/xxx
         public void Post([FromBody]string value)
         {
         }
 
-        // PUT: api/Config/5
+        // PUT: api/xxx/5
         public void Put(int id, [FromBody]string value)
         {
         }
 
-        // DELETE: api/Config/5
+        // DELETE: api/xxx/5
         public void Delete(int id)
         {
         }

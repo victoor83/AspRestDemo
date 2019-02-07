@@ -16,6 +16,7 @@ namespace RestDemo.Controllers
         }
 
         // GET api/values/5
+        [HttpGet]
         public string Get(int id)
         {
             return "value " + id;

@@ -1,0 +1,15 @@
+﻿@using RestDemo.Models
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h3>Passing Data From Controller to View using ViewBag</h3>
+@{
+    var data = ViewBag.Message;
+}
+<h2>Id: @data.Id</h2>
+<h2>RecordName: @data.RecordName</h2>
+<h2>RecordDetail: @data.RecordDetail</h2>
+
+
