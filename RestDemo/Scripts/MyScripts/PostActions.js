@@ -19,7 +19,7 @@
             data: JSON.stringify(person),      //without this person = null in controler
             contentType: "application/json",   //withot this the values in person are null   in controller      
             success: function () {
-                $("#MyElement1").html("success");
+                $("#txtResultDB").html("success");
             }
         });
 }
