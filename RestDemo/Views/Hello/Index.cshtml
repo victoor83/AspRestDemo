@@ -14,15 +14,15 @@
     <input inputmode="text" id="inputCity" value="Berlin" />
 </div>
 <div class="col-md-4">
-    <h2>Add person via model</h2>
-    <button id="btnSave" type="button" onclick="onSaveIntoDbButtonClick()">Save Into DB</button>
+    <h2>Add person via Razor</h2>
+    <button id="btnSave" type="button" onclick="onRazor()">TestRazor</button>
 </div>
 
 <div class="col-md-4">
     <h2>Add person to DB</h2>
-    <input inputmode="text" id="inputName" value="Name" />
-    <input inputmode="text" id="inputCity" value="City" />
-    <input inputmode="numeric" id="inputPostalCode" value="Zip" /><br>
+    <input inputmode="text" id="inputName" value="exampleName" />
+    <input inputmode="text" id="inputCity2" value="exampleCity" />
+    <input inputmode="numeric" id="inputPostalCode" value="exampleZip" /><br>
     <button id="btnSave" type="button" onclick="onSaveIntoDbButtonClick()">Save Into DB</button>
 </div>
 <div class="col-md-4">
@@ -51,7 +51,8 @@
 </div>
 
 
-<script type="text/javascript" src="~/Scripts/MyScripts/HelloPage.js"></script>
+<script type="text/javascript" src="~/Scripts/MyScripts/GetActions.js"></script>
+<script type="text/javascript" src="~/Scripts/MyScripts/PostActions.js"></script>
 
 @*@section scripts
     {

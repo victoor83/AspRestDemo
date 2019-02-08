@@ -33,19 +33,14 @@ namespace RestDemo.Controllers
         }
 
         // POST: api/Person
-        //[HttpPost]
-        //public void Post([FromBody]string value)
-        //{
-
-        //   // var fff = Json deserialiyzer<PersonDto>...
-        //}
-
         [HttpPost]
-        public void Post(Person objPerson)
+        public void Post(Person person)
         {
 
-            // var fff = Json deserialiyzer<myObject>...
+            var dataProvider = new DataProvider();
+            dataProvider.InsertPerson(new PersonDto() { Name = person.Name, City =  person.City, Zip = person.Zip });
         }
+
 
         // PUT: api/Person/5
         public void Put(int id, [FromBody]string value)
