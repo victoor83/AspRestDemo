@@ -49,7 +49,7 @@ namespace BusinessLayer
         public void DeleteLastPerson()
         {
             _connection = new SqlConnection(_connectString);
-            string sqlCommand = $"Delete from Data Where CustomerID = (select Max(CustomerID) From Data)";
+            string sqlCommand = $"Delete from Data Where CustomerID = (select Max(CustomerID) From Data) AND CustomerID > 6";
 
             using (_connection)
             {
