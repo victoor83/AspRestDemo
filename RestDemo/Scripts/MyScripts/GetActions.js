@@ -68,6 +68,7 @@ var onButtonClick = function () {
     });
 }
 
+//Open Input popup
 var onButtonClick2 = function () {
     var person = prompt("Please enter your name", "Adam XYZ");
     $("#MyElement1").html("<strong>" + person + "</strong> ");
