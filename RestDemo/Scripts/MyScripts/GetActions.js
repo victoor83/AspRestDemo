@@ -10,6 +10,7 @@ var UpdatePersonTable = function () {
         url: "/api/Person/GetAllPersons",
         success: function (result) {
             var i;
+            $('#tabPersons').append('<tr><th style="color:brown">Name</th><th style="color:brown">City</th><th style="color:brown">Zip</th><th style="color:brown">Country</th></tr>');
             for (i = 0; i < result.length; i++) {
                 $('#tabPersons').append('<tr><td>' + result[i].Name + '</td><td>'
                     + result[i].City + '</td><td>' + result[i].Zip + '</td><td>' + result[i].Country + '</td></tr>');
@@ -68,7 +69,7 @@ var onButtonClick = function () {
 }
 
 var onButtonClick2 = function () {
-    var person = prompt("Please enter your name", "Victor Paczo");
+    var person = prompt("Please enter your name", "Adam XYZ");
     $("#MyElement1").html("<strong>" + person + "</strong> ");
     window.alert("Your name is " + person);
 }
