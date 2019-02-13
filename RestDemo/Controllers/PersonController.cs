@@ -13,6 +13,8 @@ namespace RestDemo.Controllers
         {
             var dataProvider = new DataProvider();
             var persons = dataProvider.GetPersonsByCity(city);
+            if (persons.Count == 0)
+                return null;
             return persons[0];
         }
         //[Route("GetPersonsByCityInJson/{cityy}")]
