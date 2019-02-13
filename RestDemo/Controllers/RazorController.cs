@@ -8,20 +8,15 @@ using System.Web.Mvc;
 
 namespace RestDemo.Controllers
 {
-    public class Records_NoJsController : Controller
+    public class RazorController : Controller
     {
-        // GET: Records
         public ActionResult Index()
         {
             DataProvider data = new DataProvider();
-            Record_NoJs rec = new Record_NoJs
-            {
-                Id = 101,
-                RecordName = "Bouchers",
-                RecordDetail = "The basic stocks"
-            };
+            PersonDto person = data.GetAllPersons()[0];
+
             //ViewBag – ViewBag gets the dynamic view data dictionary. 
-            ViewBag.Message = rec;
+            ViewBag.Message = person;
             return View();
         }
     }

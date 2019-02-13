@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace RestDemo.Controllers
 {
-    public class HelloController : Controller
+    public class PlaygroundController : Controller
     {
-        // GET: Hello
+        // GET: About
         public ActionResult Index()
         {
             return View();

@@ -14,18 +14,10 @@
     <input inputmode="text" id="inputCity" value="Berlin" />
 </div>
 <div class="col-md-4">
-    <h2>Add person via Razor</h2>
-    <button id="btnSave" type="button" onclick="onRazor()">TestRazor</button>
+    <h2>Razor test</h2>
+    <button id="btnSRazor" type="button" onclick="OpenUrlInNewTab('/Razor')">Get person via Razor</button>
 </div>
 
-<div class="col-md-4">
-    <h2>Add person to DB</h2>
-    <input inputmode="text" id="inputName" value="exampleName" />
-    <input inputmode="text" id="inputCity2" value="exampleCity" />
-    <input inputmode="numeric" id="inputPostalCode" value="exampleZip" /><br>
-    <button id="btnSave" type="button" onclick="onSaveIntoDbButtonClick()">Save Into DB</button>
-    <h7 id="txtResultDB">...result..will be shown here...</h7id="txtPerson">
-</div>
 <div class="col-md-4">
     <h2>Car selector</h2>
     <!-- Surround the select box within a "custom-select" DIV element.
@@ -47,8 +39,7 @@
             <option value="12">Volvo</option>
         </select>
     </div>
-    <button type="button" onclick="onButtonClick2()">Display selected car</button>
-    <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
+    <button type="button" onclick="onCarClick()">Display selected car</button>
 </div>
 
 

@@ -8,15 +8,6 @@ namespace RestDemo.Controllers
 {
     public class PersonController : ApiController
     {
-        // GET: api/Person
-        // GET api/values
-        //public IEnumerable<string> Get()
-        //{
-        //    return new string[] { "value1", "value2" };
-        //}
-
-        // GET: api/Person/5
-        //[Route(/GibtMirdasGeld")]
         [HttpGet]
         public PersonDto GetFirstPersonByCity(string city)
         {
@@ -32,13 +23,19 @@ namespace RestDemo.Controllers
             return dataProvider.GetPersonsByCityInJson(city);
         }
 
+        [HttpGet]
+        public List<PersonDto> GetAllPersons()
+        {
+            var dataProvider = new DataProvider();
+            return dataProvider.GetAllPersons();
+        }
+
         // POST: api/Person
         [HttpPost]
         public void Post(Person person)
         {
-
             var dataProvider = new DataProvider();
-            dataProvider.InsertPerson(new PersonDto() { Name = person.Name, City =  person.City, Zip = person.Zip });
+            dataProvider.InsertPerson(new PersonDto() { Name = person.Name, City =  person.City, Zip = person.Zip, Country = person.Country});
         }
 
 
@@ -48,8 +45,11 @@ namespace RestDemo.Controllers
         }
 
         // DELETE: api/Person/5
-        public void Delete(int id)
+        [HttpDelete]
+        public void DeleteLastPerson()
         {
+            var dataProvider = new DataProvider();
+            dataProvider.DeleteLastPerson();
         }
     }
 }

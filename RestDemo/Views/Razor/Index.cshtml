@@ -1,0 +1,15 @@
+﻿@using RestDemo.Models
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h3>Razor: Passing Data (First Person from DB) From Controller to View using ViewBag</h3>
+@{
+    var data = ViewBag.Message;
+}
+<h2>Name: @data.Name</h2>
+<h2>RecordName: @data.City</h2>
+<h2>RecordDetail: @data.Zip</h2>
+<h2>RecordDetail: @data.Country</h2>
+

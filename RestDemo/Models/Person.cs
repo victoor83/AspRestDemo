@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace RestDemo.Models
+﻿namespace RestDemo.Models
 {
     public class Person
     {
@@ -11,5 +6,6 @@ namespace RestDemo.Models
         public string Name;
         public string City;
         public int Zip;
+        public string Country;
     }   
 }
