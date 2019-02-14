@@ -1,7 +1,6 @@
 ﻿using BusinessLayer;
 using RestDemo.Models;
 using System.Collections.Generic;
-
 using System.Web.Http;
 
 namespace RestDemo.Controllers

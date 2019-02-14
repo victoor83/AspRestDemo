@@ -150,6 +150,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\ClientController.cs" />
     <Compile Include="Controllers\PlaygroundController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PersonController.cs" />
@@ -181,6 +182,7 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\MyScripts\ClientInfo.js" />
     <Content Include="Scripts\MyScripts\datatables.js" />
     <Content Include="Scripts\MyScripts\DeleteAction.js" />
     <Content Include="Scripts\MyScripts\GetActions.js" />

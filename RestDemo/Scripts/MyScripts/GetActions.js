@@ -1,4 +1,5 @@
-﻿//Fill Html table with database data
+﻿
+//Fill Html table with database data
 $(document).ready(function () {
     UpdatePersonTable();
 });
@@ -78,4 +79,7 @@ var onButtonClick2 = function () {
 var onCarClick = function () {
     window.alert("You selected: " + $("#myCombo option:selected").text());
 }
+
+
+
 

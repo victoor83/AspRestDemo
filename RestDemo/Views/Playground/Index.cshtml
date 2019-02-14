@@ -1,4 +1,7 @@
-﻿
+﻿<script type="text/javascript" src="~/Scripts/MyScripts/GetActions.js"></script>
+<script type="text/javascript" src="~/Scripts/MyScripts/PostActions.js"></script>
+<script src="~/Scripts/MyScripts/ClientInfo.js"></script>
+
 <div class="col-md-4">
     <h2>Getting started</h2>
     <p id="MyElement1">....Show value here...</p>
@@ -10,7 +13,7 @@
     <h2 style="color:darkorange">Person managment</h2>
     <p id="txtPerson">....Show person name here...</p>
     <button type="button" onclick="onPersonButtonClick()">Get name of first person by city</button><br>
-    <button type="button" onclick="onPersonJsonButtonClick()">Get persons in Json</button><br>
+    <button type="button" onclick="onPersonJsonButtonClick()">Get persons in Json by city</button><br>
     <input inputmode="text" id="inputCity" value="Berlin" />
 </div>
 @{
@@ -20,6 +23,14 @@
 <div class="col-md-4">
     <h2>Razor test</h2>
     <button id="btnSRazor" type="button" onclick="OpenUrlInNewTab('/Razor')">Get person via Razor</button>
+</div>
+<div class="col-md-4">
+    <h2 style= "color:orangered">Ip test</h2>
+    <button type="button" onclick="getClientData()">Get client data</button><br>
+    <ul id="lstClient">
+        <li>...</li>
+    </ul>
+
 </div>
 
 <div class="col-md-4">
@@ -47,14 +58,4 @@
 </div>
 
 
-<script type="text/javascript" src="~/Scripts/MyScripts/GetActions.js"></script>
-<script type="text/javascript" src="~/Scripts/MyScripts/PostActions.js"></script>
-
-@*@section scripts
-    {
-        <script type="text/javascript">
-
-        </script>
-
-    }*@
 
