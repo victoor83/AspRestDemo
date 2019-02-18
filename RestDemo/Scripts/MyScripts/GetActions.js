@@ -2,6 +2,7 @@
 //Fill Html table with database data
 $(document).ready(function () {
     UpdatePersonTable();
+    //selectTest();
 });
 
 
@@ -78,6 +79,21 @@ var onButtonClick2 = function () {
 
 var onCarClick = function () {
     window.alert("You selected: " + $("#myCombo option:selected").text());
+}
+
+
+//only for test purpose
+var selectTest = function()
+{
+    var mySelect = document.getElementById('myCombo');
+    var searchedValue = "Mini"
+
+    for (var i, j = 0; i = mySelect.options[j]; j++) {
+        if (i.value == searchedValue) {
+            mySelect.selectedIndex = j;
+            break;
+        }
+    }
 }
 
 
