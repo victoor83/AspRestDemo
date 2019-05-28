@@ -14,7 +14,7 @@ var UpdatePersonTable = function () {
             var i;
             $('#tabPersons').append('<tr><th style="color:brown">Name</th><th style="color:brown">City</th><th style="color:brown">Zip</th><th style="color:brown">Country</th></tr>');
             for (i = 0; i < result.length; i++) {
-                $('#tabPersons').append('<tr><td>' + result[i].Name + '</td><td>'
+                $('#tabPersons').append('<tr><td title = ' + "'" + result[i].Name + "'" +' class="rowCut">' + result[i].Name + '</td><td>'
                     + result[i].City + '</td><td>' + result[i].Zip + '</td><td>' + result[i].Country + '</td></tr>');
             }
         }
